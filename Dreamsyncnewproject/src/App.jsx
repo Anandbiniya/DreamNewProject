@@ -6,6 +6,7 @@ import { About } from "./Pages/About";
 import { Info } from "./Pages/Info";
 import { Contact } from "./Pages/Contact";
 import { AppLayout } from "./components/Layout/AppLayout";
+import { ErrorPage } from "./Pages/ErrorPage";
 
 
 const router=createBrowserRouter([
@@ -13,6 +14,7 @@ const router=createBrowserRouter([
   {
     path:"/",
     element:<AppLayout/>,
+    errorElement:<ErrorPage/>,
     children:[
       {
         path:"/",
